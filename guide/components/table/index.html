@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Table | OpenBMC Web UI Style Guide</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    
+    <meta name="description" content="Guidance on code style and development for the OpenBMC browser-based UI">
+    
+    <link rel="preload" href="/webui-vue/assets/css/0.styles.bc1b00f6.css" as="style"><link rel="preload" href="/webui-vue/assets/js/app.1fede35e.js" as="script"><link rel="preload" href="/webui-vue/assets/js/2.145ac122.js" as="script"><link rel="preload" href="/webui-vue/assets/js/3.67f5b2a3.js" as="script"><link rel="prefetch" href="/webui-vue/assets/js/10.2a909d83.js"><link rel="prefetch" href="/webui-vue/assets/js/11.edbe5d80.js"><link rel="prefetch" href="/webui-vue/assets/js/12.3924ecd8.js"><link rel="prefetch" href="/webui-vue/assets/js/13.f13fbb26.js"><link rel="prefetch" href="/webui-vue/assets/js/14.2d382d4c.js"><link rel="prefetch" href="/webui-vue/assets/js/15.6041f25d.js"><link rel="prefetch" href="/webui-vue/assets/js/16.628205de.js"><link rel="prefetch" href="/webui-vue/assets/js/17.035fbc74.js"><link rel="prefetch" href="/webui-vue/assets/js/18.5932abb3.js"><link rel="prefetch" href="/webui-vue/assets/js/19.6ebe89fd.js"><link rel="prefetch" href="/webui-vue/assets/js/20.af373ccb.js"><link rel="prefetch" href="/webui-vue/assets/js/21.3a816c2a.js"><link rel="prefetch" href="/webui-vue/assets/js/22.f12214fc.js"><link rel="prefetch" href="/webui-vue/assets/js/23.36765472.js"><link rel="prefetch" href="/webui-vue/assets/js/24.200f80af.js"><link rel="prefetch" href="/webui-vue/assets/js/25.a7b6769c.js"><link rel="prefetch" href="/webui-vue/assets/js/26.c707516a.js"><link rel="prefetch" href="/webui-vue/assets/js/27.06c7e26f.js"><link rel="prefetch" href="/webui-vue/assets/js/28.021a6ea0.js"><link rel="prefetch" href="/webui-vue/assets/js/29.adb210d8.js"><link rel="prefetch" href="/webui-vue/assets/js/30.5abe9af3.js"><link rel="prefetch" href="/webui-vue/assets/js/31.605be01e.js"><link rel="prefetch" href="/webui-vue/assets/js/32.424ca130.js"><link rel="prefetch" href="/webui-vue/assets/js/33.bd10d00b.js"><link rel="prefetch" href="/webui-vue/assets/js/34.37d89f5d.js"><link rel="prefetch" href="/webui-vue/assets/js/35.1950c2b7.js"><link rel="prefetch" href="/webui-vue/assets/js/36.422c8d52.js"><link rel="prefetch" href="/webui-vue/assets/js/4.487ef5c6.js"><link rel="prefetch" href="/webui-vue/assets/js/5.7fbdbdea.js"><link rel="prefetch" href="/webui-vue/assets/js/6.1453b9e2.js"><link rel="prefetch" href="/webui-vue/assets/js/7.9c8ef165.js"><link rel="prefetch" href="/webui-vue/assets/js/8.bed174d7.js"><link rel="prefetch" href="/webui-vue/assets/js/9.82c8b50e.js">
+    <link rel="stylesheet" href="/webui-vue/assets/css/0.styles.bc1b00f6.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/webui-vue/" class="home-link router-link-active"><!----> <span class="site-name">OpenBMC Web UI Style Guide</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/webui-vue/guide/" class="nav-link router-link-active">
+  Guide
+</a></div><div class="nav-item"><a href="/webui-vue/themes/" class="nav-link">
+  Themes
+</a></div><div class="nav-item"><a href="https://github.com/openbmc/webui-vue" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/webui-vue/guide/" class="nav-link router-link-active">
+  Guide
+</a></div><div class="nav-item"><a href="/webui-vue/themes/" class="nav-link">
+  Themes
+</a></div><div class="nav-item"><a href="https://github.com/openbmc/webui-vue" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/webui-vue/guide/" aria-current="page" class="sidebar-link">Getting Started</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Coding Standards</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Guidelines</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/webui-vue/guide/unit-testing/" class="sidebar-link">Unit Testing</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Components</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/webui-vue/guide/components/" aria-current="page" class="sidebar-link">Overview</a></li><li><a href="/webui-vue/guide/components/alert.html" class="sidebar-link">Alerts</a></li><li><a href="/webui-vue/guide/components/buttons/" class="sidebar-link">Buttons</a></li><li><a href="/webui-vue/guide/components/page.html" class="sidebar-link">Page</a></li><li><a href="/webui-vue/guide/components/status-icon/" class="sidebar-link">StatusIcon</a></li><li><a href="/webui-vue/guide/components/table/" aria-current="page" class="active sidebar-link">Table</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/webui-vue/guide/components/table/#basic-table" class="sidebar-link">Basic table</a></li><li class="sidebar-sub-header"><a href="/webui-vue/guide/components/table/#sort" class="sidebar-link">Sort</a></li><li class="sidebar-sub-header"><a href="/webui-vue/guide/components/table/#expandable-rows" class="sidebar-link">Expandable rows</a></li><li class="sidebar-sub-header"><a href="/webui-vue/guide/components/table/#search" class="sidebar-link">Search</a></li><li class="sidebar-sub-header"><a href="/webui-vue/guide/components/table/#row-actions" class="sidebar-link">Row actions</a></li></ul></li><li><a href="/webui-vue/guide/components/toast.html" class="sidebar-link">Toasts</a></li><li><a href="/webui-vue/guide/components/tooltip.html" class="sidebar-link">InfoTooltip</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Quick Start</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="table"><a href="#table" class="header-anchor">#</a> Table</h1> <p>All tables in the application are using the <a href="https://bootstrap-vue.org/docs/components/table" target="_blank" rel="noopener noreferrer">BoostrapVue table component<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>.</p> <p>To use the component, include the <code>&lt;b-table&gt;</code> tag in the template. The component is registered globally so does not need to be imported in each SFC.</p> <h2 id="basic-table"><a href="#basic-table" class="header-anchor">#</a> Basic table</h2> <p>There are a few required properties to maintain consistency across the application. The full list of options can be viewed on the <a href="https://bootstrap-vue.org/docs/components/table#comp-ref-b-table-props" target="_blank" rel="noopener noreferrer">Bootstrap-vue table component's documentation page<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>.</p> <h3 id="required-properties"><a href="#required-properties" class="header-anchor">#</a> Required properties</h3> <ul><li><code>items</code> - renders table items</li> <li><code>fields</code> - renders table header</li> <li><code>hover</code> - enables table row hover state</li> <li><code>responsive</code> or <code>stacked</code> - makes the table responsive (enables horizontal scrolling or stacked view) at the defined breakpoint</li> <li><code>show-empty</code> <em>(required if table data is generated dynamically)</em> - shows an empty message if there are no items in the table</li> <li><code>empty-text</code> <em>(required if table data is generated dynamically)</em> - the translated empty message</li></ul> <p><img src="/webui-vue/assets/img/table.2f5c6005.png" alt="Basic table example"> <img src="/webui-vue/assets/img/table-empty.239c6ec7.png" alt="Basic empty table example"></p> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>b-table</span>
+    <span class="token attr-name">hover</span>
+    <span class="token attr-name">show-empty</span>
+    <span class="token attr-name">responsive</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>md<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name">:items</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>items<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name">:fields</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>fields<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name">:empty-text</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>$t(<span class="token punctuation">'</span>global.table.emptyMessage<span class="token punctuation">'</span>)<span class="token punctuation">&quot;</span></span>
+  <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+  <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+    <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      items<span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          name<span class="token operator">:</span> <span class="token string">'Babe'</span><span class="token punctuation">,</span>
+          age<span class="token operator">:</span> <span class="token string">'3 years'</span><span class="token punctuation">,</span>
+          color<span class="token operator">:</span> <span class="token string">'white, orange, grey'</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          name<span class="token operator">:</span> <span class="token string">'Grey Boy'</span><span class="token punctuation">,</span>
+          age<span class="token operator">:</span> <span class="token string">'4 months'</span><span class="token punctuation">,</span>
+          color<span class="token operator">:</span> <span class="token string">'grey'</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      fields<span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          key<span class="token operator">:</span> <span class="token string">'name'</span><span class="token punctuation">,</span>
+          label<span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$t</span><span class="token punctuation">(</span><span class="token string">'table.name'</span><span class="token punctuation">)</span> <span class="token comment">//translated label</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          key<span class="token operator">:</span> <span class="token string">'age'</span><span class="token punctuation">,</span>
+          label<span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$t</span><span class="token punctuation">(</span><span class="token string">'table.age'</span><span class="token punctuation">)</span> <span class="token comment">//translated label</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          key<span class="token operator">:</span> <span class="token string">'color'</span><span class="token punctuation">,</span>
+          label<span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$t</span><span class="token punctuation">(</span><span class="token string">'table.color'</span><span class="token punctuation">)</span> <span class="token comment">// translated label</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h2 id="sort"><a href="#sort" class="header-anchor">#</a> Sort</h2> <p>To enable table sort, include <code>sortable: true</code> in the fields array for sortable columns and add the following props to the <code>&lt;b-table&gt;</code> component:</p> <ul><li><code>sort-by</code></li> <li><code>no-sort-reset</code></li> <li><code>sort-icon-left</code></li></ul> <p><img src="/webui-vue/assets/img/table-sort.6a74b1a4.png" alt="Table sort example"></p> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>b-table</span>
+    <span class="token attr-name">hover</span>
+    <span class="token attr-name">no-sort-reset</span>
+    <span class="token attr-name">sort-icon-left</span>
+    <span class="token attr-name">sort-by</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>rank<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name">responsive</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>md<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name">:items</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>items<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name">:fields</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>fields<span class="token punctuation">&quot;</span></span>
+  <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      items<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token operator">...</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      fields<span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          key<span class="token operator">:</span> <span class="token string">'name'</span><span class="token punctuation">,</span>
+          label<span class="token operator">:</span> <span class="token string">'Name'</span><span class="token punctuation">,</span> <span class="token comment">//should be translated</span>
+          sortable<span class="token operator">:</span> <span class="token boolean">true</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          key<span class="token operator">:</span> <span class="token string">'rank'</span><span class="token punctuation">,</span>
+          label<span class="token operator">:</span> <span class="token string">'Rank'</span><span class="token punctuation">,</span> <span class="token comment">//should be translated</span>
+          sortable<span class="token operator">:</span> <span class="token boolean">true</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          key<span class="token operator">:</span> <span class="token string">'description'</span><span class="token punctuation">,</span>
+          label<span class="token operator">:</span> <span class="token string">'Description'</span><span class="token punctuation">,</span> <span class="token comment">//should be translated</span>
+          sortable<span class="token operator">:</span> <span class="token boolean">false</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h2 id="expandable-rows"><a href="#expandable-rows" class="header-anchor">#</a> Expandable rows</h2> <p>To add an expandable row in the table, add a column for the expand button in the fields array. Include the tdClass <code>table-row-expand</code> to ensure icon rotation is handled. Use the built in <a href="https://bootstrap-vue.org/docs/components/table#comp-ref-b-table-slots" target="_blank" rel="noopener noreferrer">cell slot<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> to target the expand button column and add a button with the chevron icon.</p> <p>Include the <a href="https://github.com/openbmc/webui-vue/blob/master/src/components/Mixins/TableRowExpandMixin.js" target="_blank" rel="noopener noreferrer">TableRowExpandMixin<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>. The mixin contains the dynamic <code>aria-label</code> and <code>title</code> attribute values that need to be included with the expand button. The <code>toggleRowDetails</code> method should be the button's click event callback. Be sure to pass the <code>row</code> object to the function.</p> <p>Use the <a href="https://bootstrap-vue.org/docs/components/table#comp-ref-b-table-slots" target="_blank" rel="noopener noreferrer">row-details slot<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> to format the expanded row content. The slot has access to the row <code>item</code> property.</p> <h3 id="summary"><a href="#summary" class="header-anchor">#</a> Summary</h3> <ol><li>Add a column for the expansion row button with the tdClass, <code>table-row-expand</code></li> <li>Include the <code>TableRowExpandMixin</code> to handle the dynamic aria label, title, and row expansion toggling</li> <li>Use the <code>#cell</code> slot to target the expandable row column and add the button with accessible markup and click handler</li> <li>Use the <code>#row-details</code> slot to format expanded row content</li></ol> <p><img src="/webui-vue/assets/img/table-expand-row.fa48151d.png" alt="Table row expand example"></p> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>b-table</span>
+    <span class="token attr-name">hover</span>
+    <span class="token attr-name">responsive</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>md<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name">:items</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>items<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name">:fields</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>fields<span class="token punctuation">&quot;</span></span>
+  <span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span> <span class="token attr-name">#cell(expandRow)</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>row<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>b-button</span>
+        <span class="token attr-name">variant</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>link<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">:aria-label</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>expandRowLabel<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">:title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>expandRowLabel<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>toggleRowDetails(row)<span class="token punctuation">&quot;</span></span>
+      <span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>icon-chevron</span> <span class="token punctuation">/&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>b-button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span> <span class="token attr-name">#row-details</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>row<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span><span class="token punctuation">&gt;</span></span>Expanded row details<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">&gt;</span></span>
+      {{ row.item }}
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>b-table</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">import</span> IconChevron <span class="token keyword">from</span> <span class="token string">'@carbon/icons-vue/es/chevron--down/20'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> TableRowExpandMixin<span class="token punctuation">,</span> <span class="token punctuation">{</span> expandRowLabel <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@/components/Mixins/TableRowExpandMixin'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  components<span class="token operator">:</span> <span class="token punctuation">{</span> IconChevron <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  mixins<span class="token operator">:</span> <span class="token punctuation">[</span> TableRowExpandMixin <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      items<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token operator">...</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      fields<span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          key<span class="token operator">:</span> <span class="token string">'expandRow'</span><span class="token punctuation">,</span>
+          label<span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+          tdClass<span class="token operator">:</span> <span class="token string">'table-row-expand'</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token operator">...</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      expandRowLabel
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h2 id="search"><a href="#search" class="header-anchor">#</a> Search</h2> <p>The table is leveraging <a href="https://bootstrap-vue.org/docs/components/table#filtering" target="_blank" rel="noopener noreferrer">BootstrapVue table filtering<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> for search. Add the <a href="https://bootstrap-vue.org/docs/components/table#filter-events" target="_blank" rel="noopener noreferrer">@filtered<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> event listener onto the <code>&lt;b-table&gt;</code> component. The event callback should track the total filtered items count.</p> <p>Import the <code>&lt;search&gt;</code> and <code>&lt;table-cell-count&gt;</code> components and include them in the template above the <code>&lt;b-table&gt;</code> component.</p> <p>Include the <a href="https://github.com/openbmc/webui-vue/blob/master/src/components/Mixins/SearchFilterMixin.js" target="_blank" rel="noopener noreferrer">SearchFilterMixin<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>. Add the <code>@change-search</code> and <code>@clear-search</code> event listeners on the <code>&lt;search&gt;</code> component and use the corresponding <code>onChangeSearchInput</code> and <code>onClearSearchInput</code> methods as the event callbacks. The table should also include the dynamic <code>:filter</code> prop with <code>searchFilter</code> set as the value.</p> <p>The <code>&lt;table-cell-count&gt;</code> component requires two properties, total table item count and total filtered items count.</p> <p>Add the <code>:empty-filtered-text</code> prop to the table to show the translated message if there are no search matches.</p> <p><img src="/webui-vue/assets/img/table-search.50bb96ff.png" alt="Table search example"></p> <p><img src="/webui-vue/assets/img/table-search-active.8622acb6.png" alt="Table search active example"></p> <p><img src="/webui-vue/assets/img/table-search-empty.a9a05017.png" alt="Table search empty example"></p> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>b-container</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>b-row</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>b-col</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>search</span>
+        <span class="token attr-name">@changeSearch</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>onChangeSearchInput<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">@clearSearch</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>onClearSearchInput<span class="token punctuation">&quot;</span></span>
+      <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>b-col</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>b-col</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>table-cell-count</span>
+        <span class="token attr-name">:filtered-items-count</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>filteredItemsCount<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">:total-number-of-cells</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>items.length<span class="token punctuation">&quot;</span></span>
+      <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>b-col</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>b-row</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>b-table</span>
+    <span class="token attr-name">hover</span>
+    <span class="token attr-name">responsive</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>md<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name">:items</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>items<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name">:fields</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>fields<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name">:filter</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>searchFilter<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name">:empty-filtered-text</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>$t(<span class="token punctuation">'</span>global.table.emptySearchMessage<span class="token punctuation">'</span>)<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name">@filtered</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>onFiltered<span class="token punctuation">&quot;</span></span>
+  <span class="token punctuation">/&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>b-container</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">import</span> Search <span class="token keyword">from</span> <span class="token string">'@/components/Global/Search'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> TableCellCount <span class="token keyword">from</span> <span class="token string">'@/components/Global/TableCellCount'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> SearchFilterMixin<span class="token punctuation">,</span> <span class="token punctuation">{</span> searchFilter <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@/components/Mixins/SearchFilterMixin'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  components<span class="token operator">:</span> <span class="token punctuation">{</span> Search<span class="token punctuation">,</span> TableCellCount <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  mixins<span class="token operator">:</span> <span class="token punctuation">[</span> SearchFilterMixin <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      items<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token operator">...</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      fields<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token operator">...</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      searchFilter<span class="token punctuation">,</span>
+      filteredItems<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  computed<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token function">filteredItemsCount</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>filteredItems<span class="token punctuation">.</span>length<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  methods<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token function">onFiltered</span><span class="token punctuation">(</span><span class="token parameter">items</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>filteredItems <span class="token operator">=</span> items<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h2 id="row-actions"><a href="#row-actions" class="header-anchor">#</a> Row actions</h2> <p>To add table row actions, add a column for the action buttons in the table. Then in the array of table items, add a corresponding array of actions for each item. The array should have each desired row action with a <code>value</code> and <code>title</code> property.</p> <p>Import the <code>&lt;table-row-action&gt;</code> component. Provide the <code>value</code> and <code>title</code> props to the component and use the named <code>#icons</code> slot to include an icon. The component will emit a <code>@click-table-action</code> with the event value.</p> <p><img src="/webui-vue/assets/img/table-row-actions.cfff2d58.png" alt="Table row actions example"></p> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>b-table</span>
+    <span class="token attr-name">hover</span>
+    <span class="token attr-name">responsive</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>md<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name">:items</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>itemsWithActions<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name">:fields</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>fields<span class="token punctuation">&quot;</span></span>
+  <span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span> <span class="token attr-name">#cell(actions)</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>row<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>table-row-action</span>
+        <span class="token attr-name">v-for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>(action, index) in row.item.actions<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">:key</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>index<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">:value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>action.value<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">:title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>action.title<span class="token punctuation">&quot;</span></span>
+        <span class="token attr-name">@click-table-action</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>onTableRowAction($event, row.item)<span class="token punctuation">&quot;</span></span>
+      <span class="token punctuation">/&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span> <span class="token attr-name">#icon</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>icon-edit</span> <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>action.value === <span class="token punctuation">'</span>edit<span class="token punctuation">'</span><span class="token punctuation">&quot;</span></span><span class="token punctuation">/&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>icon-delete</span> <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>action.value === <span class="token punctuation">'</span>delete<span class="token punctuation">'</span><span class="token punctuation">&quot;</span></span><span class="token punctuation">/&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>table-row-action</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>b-table</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">import</span> IconDelete <span class="token keyword">from</span> <span class="token string">'@carbon/icons-vue/es/trash-can/20'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> IconEdit <span class="token keyword">from</span> <span class="token string">'@carbon/icons-vue/es/edit/20'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> TableRowAction <span class="token keyword">from</span> <span class="token string">'@/components/Global/TableRowAction'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  components<span class="token operator">:</span> <span class="token punctuation">{</span> IconDelete<span class="token punctuation">,</span> IconEdit<span class="token punctuation">,</span> TableRowAction <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      items<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token operator">...</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      fields<span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token operator">...</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          key<span class="token operator">:</span> <span class="token string">'actions'</span><span class="token punctuation">,</span>
+          label<span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+          tdClass<span class="token operator">:</span> <span class="token string">'text-right text-nowrap'</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  computed<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token function">itemsWithActions</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>items<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">item</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token punctuation">{</span>
+          <span class="token operator">...</span>item<span class="token punctuation">,</span>
+          actions<span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+              value<span class="token operator">:</span> <span class="token string">'edit'</span><span class="token punctuation">,</span>
+              title<span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$t</span><span class="token punctuation">(</span><span class="token string">'global.action.edit'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>
+              value<span class="token operator">:</span> <span class="token string">'delete'</span><span class="token punctuation">,</span>
+              title<span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$t</span><span class="token punctuation">(</span><span class="token string">'global.action.delete'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  methods<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token function">onTableRowAction</span><span class="token punctuation">(</span><span class="token parameter">event<span class="token punctuation">,</span> row</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// row action callback</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/webui-vue/guide/components/status-icon/" class="prev">
+        StatusIcon
+      </a></span> <span class="next"><a href="/webui-vue/guide/components/toast.html">
+        Toasts
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/webui-vue/assets/js/app.1fede35e.js" defer></script><script src="/webui-vue/assets/js/2.145ac122.js" defer></script><script src="/webui-vue/assets/js/3.67f5b2a3.js" defer></script>
+  </body>
+</html>
